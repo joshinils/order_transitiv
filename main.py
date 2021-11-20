@@ -10,7 +10,7 @@ def sort_fun(index_1, index_2):
     global string_list
 
     if matrix_compare[index_1][index_2] == 0:
-        r = (string_list[index_1] > string_list[index_2]) * 2 -1
+        r = (string_list[index_1] > string_list[index_2]) * 2 -1 # todo, get info from user
         print("new  compare ", string_list[index_1], " > ", string_list[index_2], "  ", index_1, " > ", index_2, " ", r)
         matrix_compare[index_1][index_2] =  r
         matrix_compare[index_2][index_1] = -r
